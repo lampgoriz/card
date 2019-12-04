@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <link rel="stylesheet" href="style_hw13.css">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+
+
+
+
+<div id="root"></div>
+<script type="text/babel">
+
+class Card extends React.Component{
+        
+     render(){
+            return(
+                 <div className="card">
+                    <div class="card_img" style={{backgroundImage: 'url('+this.props.pathImg + ')'}}> </div>
+                    <h1 class ="top__name">{this.props.name}</h1>
+                    <h1 class ="bottom__name">{this.props.name}</h1>
+                    
+                </div>
+            )
+        }
+    }
+
+     const App = (
+        <div>
+          <Card name="6" pathImg="https://chudotvorstvo.ru/wp-content/uploads/2019/02/Pikovaya-mast.jpg"/>
+          <Card name="7" pathImg="http://magyc.ru/images/gadanie-znachenie-igralnyh-kart_3_1.jpg"/>
+          <Card name="8" pathImg="https://1001golos.ru/uploads/ratings/1494000/1493574/pic2.jpg"/>
+          <Card name="9" pathImg="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/SuitClubs.svg/1200px-SuitClubs.svg.png"/>
+        </div> 
+         
+    )
+
+  ReactDOM.render(
+    App,
+    document.getElementById('root')
+  );
+
+</script>
+  
+</body>
+</html>

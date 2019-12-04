@@ -1,0 +1,38 @@
+.card{
+    display: inline-block;
+    padding: 15px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 5px 5px 10px #666;
+    width: 250px;
+    height: 400px;
+    position: relative;
+}
+.card_img{
+    height: 100px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 158px;
+    bottom: 0;
+}
+.top__name{
+    position: absolute;
+    left: -225px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.bottom__name{
+    position: absolute;
+    left: 220px;
+    right: 0;
+    top: 360px;
+    bottom: 0;
+}
